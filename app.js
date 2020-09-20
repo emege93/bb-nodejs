@@ -1,7 +1,7 @@
 const express = require('express');
-
 const app = express();
-const PORT = 3000;
+
+const port = process.env.PORT || 3000;
 
 // MOTOR DE PLANTILLAS
 app.set('view engine', 'ejs');
@@ -22,6 +22,6 @@ app.use((req, res, next) => {
     })
 })
 
-app.listen(PORT, () => {
-    console.log(`Servidor a su servicio en http://localhost:${PORT}`);
+app.listen(port, () => {
+    console.log(`Servidor a su servicio en http://localhost:${port}`);
 })
