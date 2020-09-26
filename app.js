@@ -1,13 +1,12 @@
 const express = require("express");
 const app = express();
 
+require('dotenv').config();
+
 // CONEXION A BASE DE DATOS
 const mongoose = require("mongoose");
 
-const user = "admin123";
-const password = "admin123";
-const dbname = "veterinario"
-const uri = `mongodb+srv://${user}:${password}@cluster0.grrlo.mongodb.net/${dbname}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.USER1}:${process.env.PASSWORD}@cluster0.grrlo.mongodb.net/${process.env.DBNAME}?retryWrites=true&w=majority`;
 
 mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(console.log("Base de datos conectada"))
