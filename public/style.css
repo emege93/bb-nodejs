@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #585c68;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    color: #555555;
+}
+
+.bold{
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.semi-bold{
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.cv{
+    width: 50rem;
+    height: auto;
+    display: flex;
+    margin: 3rem auto;
+}
+
+.cv .cv-left{
+    width: 17.5rem;
+    background: #0bb5f4;
+}
+
+.cv .cv-left .cv-profile{
+    width: 100%;
+    height: 17.5rem;
+}
+
+.cv .cv-left .cv-profile img{
+    width: 100%;
+    height: 100%;
+}
+
+.cv .cv-left .cv-content{
+    padding: 0 1.6rem;
+}
+
+.cv .title{
+    margin-bottom: 1.3rem;
+}
+
+.cv .cv-left .bold{
+    color: #fff;
+}
+
+.cv .cv-left .regular{
+    color: #b1eaff;
+}
+
+.cv .cv-item{
+    padding: 1.6rem 0;
+    border-bottom: .13rem solid #b1eaff;
+}
+
+.cv .cv-left .cv-item:last-child,
+.cv .cv-right .cv-item:last-child{
+    border-bottom: 0rem;
+}
+
+.cv .cv-left ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: .6rem;
+}
+
+.cv .cv-left ul li:last-child{
+    margin-bottom: 0;
+}
+
+.cv .cv-left ul li .icon{
+    width: 2rem;
+    height: 2rem;
+    background: #fff;
+    color: #0bb5f4;
+    border-radius: 50%;
+    margin-right: .9rem;
+    font-size: 1rem;
+    position: relative;
+}
+
+.cv .icon i,
+.cv .cv-right .cv-hobby ul li i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cv .cv-left ul li .data{
+    color: #b1eaff;
+}
+
+.cv .cv-left .cv-skills ul li{
+    color: #b1eaff;
+    justify-content: space-between;
+}
+
+.cv .cv-left .cv-skills ul li .skill-name{
+    width: 25%;
+}
+
+.cv .cv-left .cv-skills ul li .skill-progress{
+    width: 60%;
+    margin: 0 .3rem;
+    height: .3rem;
+    background: #009fd9;
+    position: relative;
+}
+
+.cv .cv-left .cv-skills ul li .skill-per{
+    width: 15%;
+}
+
+.cv .cv-left .cv-skills ul li .skill-progress span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #fff;
+}
+
+.cv .cv-right{
+    width: 32.5rem;
+    background: #fff;
+    padding: 1.6rem;
+}
+
+.cv .cv-right .bold{
+    color: #0bb5f4;
+}
+
+.cv .cv-right .cv-work ul,
+.cv .cv-right .cv-education ul,
+.cv .cv-right .cv-extraeducation ul{
+    padding-left: 3rem;
+    overflow: hidden;
+}
+
+
+.cv .cv-right ul li{
+    position: relative;
+}
+
+.cv .cv-right ul li .date{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: .9rem;
+}
+
+.cv .cv-right ul li .info{
+    margin-bottom: 1.3rem;
+}
+
+.cv .cv-right ul li:last-child .info{
+    margin-bottom: 0;
+}
+
+
+.cv .cv-right .cv-work ul li:before,
+.cv .cv-right .cv-education ul li:before,
+.cv .cv-right .cv-extraeducation ul li:before{
+    content: "";
+    position: absolute;
+    top: .3rem;
+    left: -1.54rem;
+    width: .4rem;
+    height: .4rem;
+    border-radius: 50%;
+    border: .13rem solid #0bb5f4;
+}
+
+.cv .cv-right .cv-work ul li:after,
+.cv .cv-right .cv-education ul li:after{
+    content: "";
+    position: absolute;
+    top: .9rem;
+    left: -1.3rem;
+    width: .19rem;
+    height: 8.5rem;
+    background: #0bb5f4;
+}
+
+.cv .cv-right .cv-work ul li:first-child:after{
+    height: 9.9rem;
+}
+
+.cv .cv-right .cv-education ul li:after{
+    height: 5.75rem;
+}
+
+.cv .cv-right .cv-extraeducation .semi-bold{
+    margin-top: 2%;
+}
+
+.cv .cv-right .cv-hobby ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cv .cv-right .cv-hobby ul li{
+    width: 5rem;
+    height: 5rem;
+    border: .13rem solid #0bb5f4;
+    border-radius: 50%;
+    position: relative;
+    color: #0bb5f4;
+}
+
+.cv .cv-right .cv-hobby ul li i {
+    font-size: 1.9rem;
+  }
+  
+  .cv .cv-right .cv-hobby ul li:before {
+    content: "";
+    position: absolute;
+    top: 2.5rem;
+    right: -3.25rem;
+    width: 3.1rem;
+    height: .13rem;
+    background: #0bb5f4;
+  }
+  
+.cv .cv-right .cv-hobby ul li:last-child:before {
+    display: none;
+  }
+
+/* 1px	0.06rem
+2px	0.13rem
+3px	0.19rem
+4px	0.3rem
+5px	0.3rem
+6px	0.4rem
+8px	0.5rem
+10px	0.6rem
+12px	0.8rem
+14px	0.9rem
+15px	0.9rem
+16px	1rem
+18px	1.1rem
+20px	1.3rem
+24px	1.5rem
+25px	1.6rem
+28px	1.8rem
+32px	2rem
+36px	2rem
+40px	3rem
+44px	3rem
+48px	3rem
+50px	3rem
+56px	4rem
+64px	4rem
+72px	5rem
+75px	5rem
+80px	5rem
+90px	6rem
+100px	6rem
+ */

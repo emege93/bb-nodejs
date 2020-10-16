@@ -24,6 +24,8 @@ app.set("view engine", "ejs");
 app.set("views", `${__dirname}/views`);
 
 // RUTAS WEB
+app.use(express.static('public'));
+/* app.use('/static', express.static('public')); OPCION PARA USAR UNA RUTA ESPECIFICA */
 app.use("/", require("./router/routersWeb"));
 app.use("/mascotas", require("./router/pets"));
 
