@@ -96,8 +96,7 @@ body{
     position: relative;
 }
 
-.cv .icon i,
-.cv .cv-right .cv-hobby ul li i{
+.cv .icon i{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -194,53 +193,21 @@ body{
     top: .9rem;
     left: -1.3rem;
     width: .19rem;
-    height: 8.5rem;
+    height: 9.6rem;
     background: #0bb5f4;
 }
 
 .cv .cv-right .cv-work ul li:first-child:after{
-    height: 9.9rem;
+    height: 6.9rem;
 }
 
 .cv .cv-right .cv-education ul li:after{
-    height: 5.75rem;
+    height: 6.95rem;
 }
 
 .cv .cv-right .cv-extraeducation .semi-bold{
     margin-top: 2%;
 }
-
-.cv .cv-right .cv-hobby ul{
-    display: flex;
-    justify-content: space-between;
-}
-
-.cv .cv-right .cv-hobby ul li{
-    width: 5rem;
-    height: 5rem;
-    border: .13rem solid #0bb5f4;
-    border-radius: 50%;
-    position: relative;
-    color: #0bb5f4;
-}
-
-.cv .cv-right .cv-hobby ul li i {
-    font-size: 1.9rem;
-  }
-  
-  .cv .cv-right .cv-hobby ul li:before {
-    content: "";
-    position: absolute;
-    top: 2.5rem;
-    right: -3.25rem;
-    width: 3.1rem;
-    height: .13rem;
-    background: #0bb5f4;
-  }
-  
-.cv .cv-right .cv-hobby ul li:last-child:before {
-    display: none;
-  }
 
 /* 1px	0.06rem
 2px	0.13rem
